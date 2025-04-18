@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Restaurant Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>La Tavola Italiana</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id ="h2styles">
+    <h2>About La Tavola Italiana</h2>
+    </div>
+    <div id="flex-container">
+        <section id="about">
+            <h3>Our restaurant</h3>
+            <img srcset="images/intro.jpg 1000w"
+                 sizes ="(max-width: 1784px) 120px"
+                 alt="outside of restaurant">
+            <p>La Tavola Italiana is a family-owned restaurant that brings the authentic flavors of Italy to your table, 
+                offering a warm, inviting atmosphere where family and friends can gather. Founded by the Rossi family in 
+                1985, our menu is inspired by traditional recipes passed down through generations, with a focus on fresh, 
+                locally sourced ingredients and time-honored cooking techniques. What began as a small trattoria has grown 
+                into a beloved destination for those seeking a true taste of Italy. At La Tavola Italiana, we believe in 
+                the values of family, community, and hospitality, ensuring that every guest feels like part of our extended
+                family while enjoying the simple pleasures of good food, great wine, and even better company.</p>
+        </section>
+        <section id="menu">
+            <h3>Menu</h3>
+            <div class="menu-items">
+            <p>Margherita Pizza</p>
+            <p>Lasagna Bolognese</p>
+            <p>Fettuccine Alfredo</p>
+            <p>Bruschetta</p>
+            <p>Tiramisu</p>
+            </div>
+        </section>
+    </div>
+    <section id="gallery">
+        <h3>Gallery</h3>
+        <div class="gallery-images">
+            <img src="images/food-600w.jpg"
+                 srcset="images/food-300w.jpg 300w, 
+                         images/food-600w.jpg 600w" 
+                 sizes="(max-width:362px) 150px,(max-width: 762px) 250px, (max-width: 1784px) 400px"
+                 alt="Delicious food" 
+                 id="one">
+            <img src="images/interior-601w.jpg"
+                 srcset="images/interior-300w.jpg 300w,
+                        images/interior-601w.jpg 600w"
+                 sizes="(max-width:362px) 150px, (max-width:762px) 250px, (max-width: 1784px) 400px"
+                 alt="interior"
+                 id="two">
+            <img src="images/plates-600w.jpg"
+                 srcset="images/plates-300w.jpg 300w,
+                         images/plates-600w.jpg 600w"
+                 sizes="(max-width:362px) 150px,(max-width: 762px) 250px, (max-width: 1784px) 400px"
+                 alt="plates"
+                 id="three">
+        </div>
+    </section>
+    <section id="contact">
+        <form>
+            <fieldset>
+                <legend>Contact Us</legend>
+
+                <div class="formRow" id="custname">
+                    <label for="customerName">Name: </label>
+                    <input name="name" id="customerName" type="text" placeholder="John Doe"/>
+                </div>
+
+                <div class="formRow">
+                    <label for="mail" class="padding">Email: </label>
+                    <input name="customerEmail" id="mail" type="email" placeholder="someone@example.com"/>
+                </div>
+
+                <div class="formRow" id="custMessage">
+                    <label for="message" class="padding">Send a Message: </label>
+                    <textarea name="customerMessage" id="message" placeholder="start message here"></textarea>
+                </div>
+                <button>Submit</button>
+                
+            </fieldset>
+
+        </form>
+    </section>
+    <footer>
+        <p>Copyright © La Tavola Italiana</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Michael Massey's Portfolio Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#portfolio">Portolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sectionStyle">
+            <h2 class="headerStyle">About Me</h2>
+            <div id ="flex-container">
+                <img src="images/me.jpg"
+                    alt="This is me, Michael Massey">
+                <p>Hi, I’m Michael Massey. I recently graduated from Tulsa Community College with an Associates degree 
+                    in Applied Science in Programming. Currently, I’m pursuing my Bachelor’s degree at the University of 
+                    Oklahoma in Information Science and Technology. I’m passionate about technology, especially web and 
+                    app development, and I’m working hard to build a career as a full-stack developer. When I'm not coding,
+                    I enjoy walking my German Shepherd, gaming, and staying active with sports. I’m always eager to learn 
+                    and explore new challenges in the tech world!</p>
+            </div>
+        </section>
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="grid-container">
+                <iframe src="videos/advancedCss.mp4" class="itemOne"></iframe>
+                <a href="module7Assignment/index.html" class="itemOne" target="_blank">Click to visit website</a>
+                <iframe src="videos/module6video.mp4" class="itemTwo"></iframe>
+                <a href="module6Assignment/index.html" class="itemTwo" target="_blank">Click to visit website</a>
+                <iframe src="videos/module5video.mp4" class="itemThree"></iframe>
+                <a href="module5Assignment/index.html" class="itemThree" target="_blank">Click to visit website</a>
+                <iframe src="videos/responsive.mp4" class="itemFour"></iframe>
+                <a href="restaurant-website/index.html" class="itemFour" target="_blank">Click to visit website</a>
+                <iframe src="videos/tableOfContents.mp4" class="itemFive"></iframe>
+                <a href="Archive/index.html" class="itemFive" target="_blank">Click to visit website</a>
+                <iframe src="videos/map.mp4" class="itemSix"></iframe>
+                <a href="Module4Assignment/index.html" class="itemSix" target="_blank">Click to visit website</a>
+
+            </div>
+        </section>
+        <section class="sectionStyle">
+            <h2 class="headerStyle" id="left-align">Contact</h2>
+            <form>
+                <fieldset>
+                    <legend>Contact Me</legend>
+                    <div class="formRow">                     
+                        <label for="customerName">Name: </label>
+                        <input name="name" id="customerName" type="text" placeholder="John Doe" />
+                    </div>
+                    <div class="formRow">
+                        <label for="mail">Email: </label>
+                        <input name="customerEmail" id="mail" type="email" placeholder="someone@example.com"/>
+                    </div>
+                     <div class="formRow">
+                        <label for="message">Send a Message: </label>
+                        <textarea name="customerMessage" id="message"></textarea>
+                     </div>
+                    <button>Submit</button>
+                </fieldset>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>Links to my social media</h3>
+        <div id="flex-container2">
+            <a href="https://www.linkedin.com/in/michael-massey-488496132/" target="_blank">My Linkedin</a>
+            <a href="https://github.com/mmassey1084?tab=repositories" target="_blank">My GitHub</a>
+            <a href="https://replit.com/~" target="_blank">My Replit</a>
+        </div>
+    </footer>
+</body>
+</html>

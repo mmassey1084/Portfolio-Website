@@ -1,0 +1,235 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc
+}
+/*nav styles*/
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-shadow:2px 2px 8px red; ;
+    border-radius: 50px;
+    padding:5px;
+}
+/*form styles*/
+form { 
+    display:flex;
+    flex-flow: row wrap;
+    width:50%;
+}
+div.formRow{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0;
+
+}
+div.formRow > * {
+    flex: 1 1 75px;
+}
+form > fieldset{
+    background-color: rgb(241, 232, 181);
+    border-radius: 20px;
+    flex: 1 1 200px;
+}
+#custname > label {
+    margin-left: 40px;
+}
+legend {
+    color: white;
+    background-color: rgb(179, 20, 25);
+    padding:5px;
+}
+button {
+    margin-left:300px;
+    margin-top: 10px;
+    border-radius: 50px;
+    padding:8px;
+}
+button:hover{
+    box-shadow: 1px 1px 8px red;
+    background-color: green;
+    color:white;
+}
+/*header styles */
+header {
+    background-image: url('images/flag.png');
+    padding: 10px 20px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    text-shadow: 2px 2px 8px red;
+}
+h3 {
+    font-family: cursive;
+}
+/*typography styles*/
+p {
+    font-family: cursive;
+}
+/*gallery and grid styles*/
+#gallery .gallery-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "onePic twoPic threePic"; 
+}
+.gallery-images{
+    perspective: 600px;
+}
+#one {
+    grid-area: onePic;
+    background-color: lightblue;
+}
+#two {
+    grid-area: twoPic;
+}
+#three{
+    grid-area: threePic;
+}
+/*image styles*/
+#about > img {
+    border-radius: 50px;
+    border: 5px green groove;
+}
+
+/*menu and about us section styles*/
+section {
+    padding: 20px;
+}
+#about, #menu {
+    background-color: #e6ffe6;
+    margin: 10px;
+    box-shadow: 1px 1px 8px red;
+}
+#menu{
+    display: flex;
+    flex: 1 1 120px;
+    order: -1;
+    padding:10px;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+#about{
+    flex-direction: column;    
+    flex: 3 1 361px;
+}
+/*footer styles*/
+footer {
+    text-align: center;
+    background-color: #e6ffe6;
+    padding:1px;
+}
+#h2styles{
+    padding:10px;
+    text-align: center;
+    background: linear-gradient(to right, green,white,red);
+    font-family: cursive;
+}
+.padding {
+    padding-left: 40px;
+}
+#flex-container{
+    display: flex;
+}
+
+/*desktop styles*/
+@media (max-width: 1252px){
+    #gallery .gallery-images{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "onePic twoPic"
+                             "threePic threePic";
+        gap:50px;
+        justify-items: center; 
+        align-items: center
+    }
+}
+@media only screen and (min-width: 1253px){
+    #two {
+        transform: rotateX(30deg) translateZ(50px);
+    }
+    #one {
+        transform: rotate(-40deg) scale(0.8,0.8)
+                   translate(40px, 50px)
+                   rotateZ(40deg) rotateY(85deg);
+    }
+    #three {
+        transform: rotateY(100deg) translateZ(-150px) translateX(-80px) scale(0.8, 0.8);
+    }
+    #gallery{
+        margin-bottom:30px;
+    }
+    .gallery-images{
+        margin-top:12px;
+    }
+    #gallery > h3{
+        padding-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 950px){
+    #gallery .gallery-images{
+        grid-template-columns: 1fr;
+        grid-template-areas: "onePic"
+                             "twoPic"
+                             "threePic";
+        gap:5px;
+        align-items: left;
+        justify-items: left;
+    }
+    #flex-container{
+        flex-direction: column;
+    }
+    form {
+        flex-direction: column;
+        width:40%;
+    }
+    .padding {
+        padding-top:10px;
+        padding-left: 0;
+    }
+    button {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    #custname > label {
+        margin-left: 0;
+    }
+    #menu{
+        order:1;
+    }
+}
+@media only screen and (max-width: 597px){
+    nav ul > li {
+        padding:5px;
+    }
+    #custname > label {
+        margin-left: 0;
+    }
+    #custMessage{
+        flex-direction: column;
+    }
+    textarea{
+        margin-top:-50px;
+    }
+}
+@media (max-width: 603px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul > li {
+        padding:5px;
+    }
+}

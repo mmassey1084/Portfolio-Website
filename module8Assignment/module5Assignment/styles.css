@@ -1,0 +1,112 @@
+body{ 
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "header header header"
+                         "aside main aside1"
+                         "footer footer footer";
+}
+body > aside {
+    grid-area: aside;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color:#36454F ;
+    border: 10px groove black;
+}
+body > #aside1 {
+    grid-area: aside1;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color:#36454F ;
+    border: 10px groove black;
+}
+body > main {
+    grid-area: main;
+    padding-left:30px;
+    padding-top: 20px;
+    padding-right: 20px;
+    background-color:#00008B;
+    color:white;
+    line-height: 1.3em;
+    border: 10px groove black;
+}
+body > footer {
+    grid-area: footer;
+    padding: 1em 0;
+    background-color: gold;
+    text-align: center;
+    place-items: center;
+    display: grid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+body > header {
+    grid-area: header;
+    text-align: center;
+    padding: 1em 0;
+    background-color: aqua;
+    
+}
+h1 {
+    font-size: 3em;
+    color:coral;
+}
+nav a {
+    padding:10px;
+    color:coral;
+    font-size: 1.3em;
+}
+nav {
+    padding-top: 20px;
+}
+nav a:link, nav a:visited{
+    color:coral;
+    background-color: aqua;
+}
+nav a:hover{
+    background-color: gold;
+    color:black;
+    border-radius: 50px;
+}
+aside > p {
+    color:white;
+    line-height: 1.3em;
+    padding-top: 10px;
+}
+aside > h2 {
+    color: white;
+}
+
+main, aside {
+    margin:10px;
+}
+.dropCap:first-of-type::first-letter{
+    font-size: 2em;
+    float:left;
+    line-height: 0.8;
+}
+main > p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+html {
+    height:100%;
+}
+body{
+    height:70%;
+}
+img {
+    width:45%;
+    float:left;
+    padding: 10px;
+}
+main > h2 {
+    padding-left: 10px;
+}
+p {
+    font-family:cursive
+}
+h1, a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,228 @@
+/* Removes the bullet points from the unordered list */
+ul {
+    list-style-type: none;
+}
+
+/* Sets each list item to be displayed as a block, floated to the left, with 33% width and centered text */
+ul li {
+    display: block;
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+/* Styles the header's main heading (h1) with a center alignment, a text shadow, and a large font size */
+header h1 {
+    text-align: center;
+    text-shadow: rgb(181,211,181) 2px 2px 1px, black 5px 5px 25px;
+    font-size: 3em;
+}
+
+/* Styles navigation links on hover: changes text color to white, background to black, adds padding and a border radius */
+nav a:hover {
+    color: white;
+    background-color: black;
+    padding: 6px;
+    border-radius: 40px;
+}
+
+/* Styles the header with a gradient background, adding padding around the content */
+header {
+    background-image: linear-gradient(to right, red, yellow);
+    padding: 30px;
+}
+
+/* Styles the navigation bar with a black background */
+nav {
+    background-color: black;
+}
+
+/* Styles anchor tags (links) with no underline, black text color, and a larger font size */
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+/* Styles the sections with a background color, box shadows, padding, a border radius, and a margin. Initially hides them with display: none */
+section {
+    background-color: #d6eaff;
+    box-shadow: 5px 10px 8px 10px red, 25px 25px 10px yellow;
+    padding: 20px 80px;
+    border-radius: 100px;
+    margin: 40px;
+    flex-direction: column;
+    display: none;
+}
+
+/* Applies a repeating background image to the body */
+body {
+    background-image: url("background.jpg");
+    background-repeat: repeat;
+}
+
+/* Styles paragraph elements with a larger font size */
+p {
+    font-size: 1.3em;
+}
+
+/* Styles buttons with padding, border radius, centering, and block display */
+button {
+    padding: 20px;
+    border-radius: 100px;
+    margin: auto;
+    display: block;
+}
+
+/* Styles the button on hover with a background color change and a pointer cursor */
+button:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+/* Centers the text in the footer and adds padding */
+footer {
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Applies a cursive font to paragraphs that are direct children of section elements */
+section > p {
+    font-family: cursive;
+}
+
+/* Styles the third section with a specific width, centers it, and aligns its text */
+#sectionThree {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Styles the main element to use flexbox layout, center items, and arrange them in a column */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles h2 elements with center alignment, text shadow, and a larger font size */
+h2 {
+    text-align: center;
+    text-shadow: red 2px 2px 1px, yellow 5px 5px 25px;
+    font-size: 2em;
+}
+
+/* Styles the first letter of the first paragraph in #sectionOne and #sectionTwo with a larger font, left alignment, and a text shadow */
+#sectionOne > p:first-of-type::first-letter, #sectionTwo > p:first-of-type::first-letter {
+    font-size: 2em;
+    float: left;
+    line-height: 0.8;
+    text-shadow: red 2px 2px 1px, yellow 5px 5px 25px;
+}
+
+/* Styles the element with id #instructions with a large font size, text shadow, and a specific font-family */
+#instructions {
+    font-size: 2em;
+    text-shadow: red 2px 2px 1px, yellow 5px 5px 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Media query for screen widths of 700px or more:
+   - Sections #sectionOne and #sectionTwo expand to 70% width on hover
+   - By default, #sectionOne and #sectionTwo are set to 50% width and have a 5s transition effect */
+@media only screen and (min-width:700px) {
+    #sectionOne:hover, #sectionTwo:hover {
+        width: 70%;
+    }
+    #sectionOne, #sectionTwo {
+        width: 50%;
+        transition: width 5s;
+    }
+    section {
+        display: flex;
+    }
+}
+
+/* Media query for screen widths of 622px or less:
+   - Reduces font sizes and button padding
+   - Disables the hover transition on #sectionOne and #sectionTwo
+   - Aligns the main content */
+@media only screen and (max-width:622px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    #sectionOne, #sectionTwo {
+        width: 40%;
+        transition: none; /* Disable hover transition */
+    }
+    p {
+        font-size: 0.5em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    nav a {
+        font-size: 1em;
+    }
+    button {
+        padding: 10px;
+    }
+    section {
+        display: flex;
+    }
+    main {
+        place-items: center;
+    }
+}
+
+/* Media query for screen widths of 453px or less:
+   - Further reduces the width of sections and font sizes
+   - Adjusts margins for sectionTwo */
+@media only screen and (max-width:453px) {
+    section {
+        width: 20%;
+        place-items: center;
+    }
+    header {
+        width: 100%;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 0.5em;
+    }
+    nav a {
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
+    #sectionTwo {
+        margin-top: -10px;
+    }
+}
+
+/* Media query for screen widths of 375px or less:
+   - Slightly increases the section width
+   - Ensures header takes up 100% width */
+@media only screen and (max-width:375px) {
+    section {
+        width: 30%;
+        place-items: center;
+    }
+    header {
+        width: 100%;
+    }
+}
+
+/* Media query for screen widths of 337px or less:
+   - Ensures header is full width and centers the main content */
+@media only screen and (max-width:337px) {
+    header {
+        width: 100%;
+    }
+    main {
+        align-items: center;
+    }
+}

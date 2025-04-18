@@ -1,0 +1,57 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+html {
+    background-color: crimson;
+    height:100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width:55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    font-size: 1.5em;
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+}
+header > img {
+    width:100%;
+}
+#container1,#container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2 {
+    text-align: center;
+}
+.section3{
+    padding-bottom: 10px;
+}
+h1 {
+    text-align: center;
+}
+#homeTitle{
+    margin-top: -100px;
+    font-size: 3em;
+}
+h1 {
+    color: crimson;
+}
