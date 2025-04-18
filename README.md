@@ -1,43 +1,42 @@
-# Portfolio-Website
 Portfolio-Website  
 🖥️ portfolio-website  
 
-**Personal Portfolio and OU-Tulsa Campus Interactive Website**  
-This repository showcases a multipage portfolio site that features personal project pages, campus map interactivity, and additional educational content. It combines semantic HTML with organized CSS layouts to provide users with a visually structured experience.
+**Modular HTML/CSS Portfolio Website**  
+This repository contains a collection of module-based assignments and a complete responsive restaurant project — all organized into a cohesive portfolio structure. It showcases various stages of my web development progress including semantic HTML, CSS styling, layout techniques, and responsive design.  
 
 ---
 
-📁 Repository Contents  
-- `index.html`: Main homepage with sections, images, and internal navigation  
-- `styles.css`: Custom stylesheet for layout, color, font styling, and responsiveness  
-- `aboutUs.html`: Static placeholder for About Us information  
-- `appointment.html`: Static page for future appointment functionality  
-- `faq.html`: Frequently Asked Questions placeholder page  
-- `foundersStudentCenter.html`: Info page about the OU-Tulsa Founders Student Center  
-- `schustermanLibrary.html`: Academic-focused profile of the Schusterman Library  
-- `tandyEducationCenter.html`: Highlights the Tandy Education Center's history and architecture  
-- `OU tulsa campus map.png`: Interactive map image used to click into different building profiles  
-- `ou-BANNER.webp`: Banner graphic used across interior pages  
-- `whisper1.jpg`, `whisper2.jpg`, `whisper3.jpg`: Image assets for homepage sections  
-- `me.jpg`: Personal branding image  
+📁 Repository Structure  
+
+- `index.html`: Main homepage of the portfolio website  
+- `styles.css`: Global stylesheet for layout, design, and responsiveness  
+- `images/`: Folder containing image assets used throughout the site  
+- `videos/`: Folder containing instructional or walkthrough videos for assignments  
+- `restaurant-website/`: Complete responsive restaurant project with advanced CSS, layout, and images  
+- `module4Assignment/`: Semantic HTML-focused assignment 
+- `module5Assignment/`: Responsive design project using media queries  
+- `module6Assignment/`: Advanced CSS techniques and interactive layout  
+- `module7Assignment/`: Project focused on layout structure and navigation  
+- `module8Assignment Archive/`: Final archived version of previous module submissions for reference  
 
 ---
 
 🌟 Project Features  
-- Responsive layout using Flexbox and fixed positioning  
-- Fully semantic HTML5 tags: `<header>`, `<main>`, `<nav>`, `<footer>`, `<section>`  
-- Interactive `<map>` element for campus navigation  
-- Table of contents styled sidebar for quick access to page sections  
-- Consistent use of color, text styling, and image formatting across all pages  
-- Modular page design, ideal for expanding with forms, galleries, or embedded media  
-- Clear layout separation for personal content vs. OU-Tulsa campus content
+
+- Semantic HTML structure with clean, readable markup  
+- CSS flexbox and grid for responsive and adaptable layouts  
+- Interactive map and visual navigation elements  
+- External page links including About Us, FAQ, Appointment, etc.  
+- Custom image galleries and styled content sections  
+- Multiple media queries to support mobile and tablet views  
+- Organized modular development showing learning progression  
 
 ---
 
-🚀 Usage Instructions  
+🚀 How to Use  
 
-1. Clone the Repository:
+1. **Clone the repository**
 
 ```bash
-git clone https://github.com/mmassey1084/Portfolio-Website.git
+git clone https://github.com/mmassey1084/portfolio-website.git
 cd portfolio-website
